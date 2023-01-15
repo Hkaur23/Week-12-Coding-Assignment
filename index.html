@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <title>Insert,Update, Read and Delete</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    
+<form id="crudForm">
+    <table class='table table-bordered' id='UserInfo'>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+        <tbody id="table_td"></tbody>
+    </table>
+    <h3>
+        Add New
+    </h3>
+    <table class='table table-bordered' id='Add'>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control" type="text" id="txtId" style="display: none" readonly name="ID" value="" />
+            </td>
+            <td>
+                <input class="form-control" type="text" id="txtname" name="name" value="" />
+            </td>
+            <td>
+                <input class="form-control" type="text" id="txtAge" name="age" value="" />
+            </td>
+            <td>
+                <select class="form-control" id="ddlRole">
+                    <option value="Select">Select</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Member">Member</option>
+                    <option value="Vice-Admin">Vice-Admin</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input class="btn btn-primary btn-lg" type="button" id="btnAdd" style="display: block" value="Add" />
+    <input class="btn btn-primary btn-lg" type="button" id="btnUpdate" style="display: none" value="Update" />
+    <br />
+    <div id="output"></div>
+</form>
+</body>
+</html>
